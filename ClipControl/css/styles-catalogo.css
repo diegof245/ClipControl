@@ -1,0 +1,25 @@
+.card-img-top {
+        height: 160px;
+        object-fit: cover;
+        }
+.badge-stock {
+        font-size: 15px;
+        }
+.bg-clip {
+        background-color: #12355b;
+        }
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+        color: #ffc13b !important;
+        }
+.institucional {
+        background-color: #6a1b3a;
+        color: #ffffff;
+        }
+.logo-inst {
+        height: 36px;
+        width: auto;
+        background-color: #ffffff;
+        border-radius: 6px;
+        padding: 2px 4px;
+        }
