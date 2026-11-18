@@ -7,7 +7,7 @@ let listaStockBajo = [
     categoria: "Escritura y corrección",
     precio: 24.00,
     existencias: 3,
-    imagen: "logo.jpg"
+    imagen: "img/Corrector liquido.jpg"
   },
   {
     codigo: "C012",
@@ -15,7 +15,7 @@ let listaStockBajo = [
     categoria: "Corte, pegado y medición",
     precio: 35.00,
     existencias: 4,
-    imagen: "logo.jpg"
+    imagen: "img/Tijeras.jpg"
   }
 ];
 
