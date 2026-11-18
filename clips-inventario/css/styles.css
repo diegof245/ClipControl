@@ -1,0 +1,49 @@
+:root {
+  --clip-azul: #12355b;
+  --clip-azul-claro: #1f5a96;
+  --clip-amarillo: #ffc13b;
+  --clip-gris: #f4f6f9;
+  --bs-font-sans-serif: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body { background-color: #fff; color: #212529; }
+
+h1, h2, h3 { color: var(--clip-azul); }
+
+
+.institucional { background-color: #6a1b3a; color: #fff; }
+.logo-inst { height: 40px; width: auto; background: #fff; border-radius: 6px; padding: 2px 4px; }
+
+
+.bg-clip { background-color: var(--clip-azul) !important; }
+.navbar .nav-link { padding: .75rem 1rem; }
+.navbar .nav-link.active,
+.navbar .nav-link:hover { color: var(--clip-amarillo); }
+
+.hero {
+  background: linear-gradient(135deg, var(--clip-azul) 0%, var(--clip-azul-claro) 100%);
+  color: #fff;
+}
+.hero h1 { color: #fff; }
+.hero-logo { max-width: 240px; filter: drop-shadow(0 8px 16px rgba(0,0,0,.35)); }
+
+.btn-clip { background-color: var(--clip-azul); color: #fff; }
+.btn-clip:hover, .btn-clip:focus { background-color: var(--clip-azul-claro); color: #fff; }
+
+.slide-oferta { background: var(--clip-gris); min-height: 340px; padding: 2rem 3.5rem; }
+.slide-oferta img { max-height: 220px; width: auto; }
+.badge-oferta { background-color: #d62839; font-size: 1rem; }
+.precio-anterior { text-decoration: line-through; color: #6c757d; }
+.precio-oferta { color: var(--clip-azul); font-weight: 700; font-size: 2rem; }
+.carousel-indicators [data-bs-target] { background-color: var(--clip-azul); }
+
+.tarjeta-modulo { transition: transform .2s ease, box-shadow .2s ease; }
+.tarjeta-modulo:hover { transform: translateY(-4px); box-shadow: 0 .75rem 1.25rem rgba(0,0,0,.15) !important; }
+.icono-modulo { font-size: 2.5rem; }
+
+@media (max-width: 575.98px) {
+  .slide-oferta { padding: 1.5rem 2.75rem; }
+  .slide-oferta img { max-height: 150px; }
+  .precio-oferta { font-size: 1.6rem; }
+  .logo-inst { height: 32px; }
+}

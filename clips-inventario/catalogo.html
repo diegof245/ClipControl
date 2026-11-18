@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Sistema de Control de Inventario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+    <div class="institucional py-2">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
+            <div class="d-flex align-items-center gap-2">
+                <img src="img/logo-ipn.png" alt="Logo IPN" class="logo-inst"
+                     onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'badge text-bg-light',textContent:'IPN'}))">
+                <span class="small fw-semibold">Instituto Politécnico Nacional</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="small fw-semibold">Escuela Superior de Cómputo</span>
+                <img src="img/logo-escom.png" alt="Logo ESCOM" class="logo-inst"
+                     onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'badge text-bg-light',textContent:'ESCOM'}))">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-clip sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="inicio.html">
+                <img src="img/logo-equipo.svg" alt="Logo ClipControl" width="36" height="36">
+                <span>ClipControl</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registro de productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin.html">Administrador</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container my-4">
+        <h1 class="fw-bold text-dark">Catálogo de Productos</h1>
+        <p class="text-muted">Consulta la lista completa del inventario disponible</p>
+    </header>
+    <main class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Boligrafo.jpg" class="card-img-top" alt="Bolígrafo (pluma) punto mediano">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C001</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Bolígrafo (pluma) punto mediano</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Escritura y corrección</span>
+                    <p class="card-text small text-secondary">Herramienta básica de tinta de aceite o gel disponible en colores estándar como negro, azul y rojo.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$7.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 48</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Lapiz.jpg" class="card-img-top" alt="Lápiz de grafito No. 2">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C002</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Lápiz de grafito No. 2</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Escritura y corrección</span>
+                    <p class="card-text small text-secondary">Útil para escribir o bocetar, graduado según su dureza (el número 2 o HB es el más común).</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$6.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 65</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Goma.jpg" class="card-img-top" alt="Goma de borrar blanca">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C003</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Goma de borrar blanca</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Escritura y corrección</span>
+                    <p class="card-text small text-secondary">Pieza de caucho o vinilo diseñada para eliminar trazos de lápiz sin dañar el papel.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$8.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 32</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Sacapuntas.jpg" class="card-img-top" alt="Sacapuntas con depósito">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C004</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Sacapuntas con depósito</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Escritura y corrección</span>
+                    <p class="card-text small text-secondary">Herramienta pequeña con cuchilla para afilar las puntas de los lápices de madera.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$15.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 19</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Corrector liquido.jpg" class="card-img-top" alt="Corrector líquido o en cinta">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C005</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Corrector líquido o en cinta</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Escritura y corrección</span>
+                    <p class="card-text small text-secondary">Producto blanco que cubre errores de tinta para permitir escribir encima.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$35.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 11</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Marcatextos.jpg" class="card-img-top" alt="Marcatextos fluorescente">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C006</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Marcatextos fluorescente</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Escritura y corrección</span>
+                    <p class="card-text small text-secondary">Plumón de tinta fluorescente y translúcida para destacar información importante en textos.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$18.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 27</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Cuadernos.jpg" class="card-img-top" alt="Cuaderno profesional (100 hojas)">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C007</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Cuaderno profesional (100 hojas)</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Papel y organización</span>
+                    <p class="card-text small text-secondary">Libro con hojas rayadas, cuadriculadas o blancas unido por espiral o cosido para tomar apuntes.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$35.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Hojas blancas.jpg" class="card-img-top" alt="Paquete de hojas blancas (100 pzas)">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C008</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Paquete de hojas blancas (100 pzas)</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Papel y organización</span>
+                    <p class="card-text small text-secondary">Paquete de papel suelto tamaño carta u oficio indispensable para imprimir documentos o dibujar.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$45.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 14</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Notas adhesivas.jpg" class="card-img-top" alt="Block de notas adhesivas (Post-it)">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C009</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Block de notas adhesivas (Post-it)</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Papel y organización</span>
+                    <p class="card-text small text-secondary">Pequeños cuadros de papel con pegamento suave en el reverso para dejar recordatorios.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$22.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Carpetas.jpg" class="card-img-top" alt="Carpeta / Fólder tamaño carta">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C010</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Carpeta / Fólder tamaño carta</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Papel y organización</span>
+                    <p class="card-text small text-secondary">Cubierta de cartulina o plástico usada para agrupar y proteger documentos sueltos.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$6.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 84</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Clip.jpg" class="card-img-top" alt="Caja de clips metálicos (100 pzas)">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C011</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Caja de clips metálicos (100 pzas)</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Papel y organización</span>
+                    <p class="card-text small text-secondary">Piezas metálicas o plásticas que sujetan varias hojas de papel de forma temporal sin perforarlas.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$16.00</p>
+                        <span class="badge bg-danger badge-stock">Existencias: 9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Tijeras.jpg" class="card-img-top" alt="Tijeras escolares punta roma">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C012</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Tijeras escolares punta roma</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Corte, pegado y medición</span>
+                    <p class="card-text small text-secondary">Herramienta de corte manual con hojas metálicas y mangos ergonómicos para papel y cartón ligero.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$25.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 16</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Pegamento.jpg" class="card-img-top" alt="Pegamento en barra (20 g)">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C013</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Pegamento en barra (20 g)</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Corte, pegado y medición</span>
+                    <p class="card-text small text-secondary">Adhesivo escolar y de oficina para unir papel, cartulina o fotografías.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$28.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Cinta adhesiva.jpg" class="card-img-top" alt="Cinta adhesiva transparente">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C014</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Cinta adhesiva transparente</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Corte, pegado y medición</span>
+                    <p class="card-text small text-secondary">Tira transparente con pegamento en una cara para reparar hojas o cerrar paquetes ligeros.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$20.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 21</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="img/Regla.jpg" class="card-img-top" alt="Regla de plástico o aluminio (30 cm)">
+                <div class="card-body d-flex flex-column">
+                    <small class="text-muted">Código: C015</small>
+                    <h5 class="card-title fs-6 fw-bold mt-1">Regla de plástico o aluminio (30 cm)</h5>
+                    <span class="badge bg-secondary mb-2 align-self-start">Corte, pegado y medición</span>
+                    <p class="card-text small text-secondary">Instrumento recto graduado en centímetros y pulgadas para medir distancias y trazar líneas rectas.</p>
+                    <div class="mt-auto">
+                        <p class="fw-bold text-success mb-1">$22.00</p>
+                        <span class="badge bg-info text-dark badge-stock">Existencias: 18</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0 small">Tecnologías para el Desarrollo de Aplicaciones Web - ESCOM IPN</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
