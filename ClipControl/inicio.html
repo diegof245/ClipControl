@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ClipControl: sistema de control de inventario para una tienda de clips.">
+  <title>ClipControl | Inicio</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo-equipo.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="institucional py-2">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <img src="img/logo-ipn.png" alt="Logo Instituto Politécnico Nacional" class="logo-inst"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'badge text-bg-light',textContent:'IPN'}))">
+        <span class="small fw-semibold">Instituto Politécnico Nacional</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="small fw-semibold">Escuela Superior de Cómputo</span>
+        <img src="img/logo-escom.png" alt="Logo Escuela Superior de Cómputo" class="logo-inst"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'badge text-bg-light',textContent:'ESCOM'}))">
+      </div>
+    </div>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-clip sticky-top" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="inicio.html">
+          <img src="img/logo-equipo.svg" alt="Logo ClipControl" width="36" height="36">
+          <span class="fw-bold">ClipControl</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registro de productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin.html">Administrador</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero py-5">
+      <div class="container text-center text-lg-start">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold">Controla tu inventario de ClipsControl, sin perder ninguno</h1>
+            <p class="lead">ClipControl ayuda a una pequeña tienda de papelería a registrar productos,
+              consultar existencias y detectar a tiempo lo que se está agotando.</p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+              <a href="catalogo.html" class="btn btn-warning btn-lg">Ver catálogo</a>
+              <a href="registro.html" class="btn btn-outline-light btn-lg">Registrar producto</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img src="img/logo-equipo.svg" alt="Ilustración del logotipo de ClipControl, un clip metálico" class="img-fluid hero-logo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" aria-labelledby="titulo-ofertas">
+      <div class="container">
+        <h2 id="titulo-ofertas" class="text-center mb-4">Ofertas de la semana</h2>
+
+        <div id="carruselOfertas" class="carousel slide carousel-dark shadow rounded-4 overflow-hidden"
+             data-bs-ride="carousel" aria-label="Productos en oferta">
+          <div class="carousel-indicators" id="indicadoresOfertas"></div>
+          <div class="carousel-inner" id="slidesOfertas"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselOfertas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselOfertas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" aria-labelledby="titulo-modulos">
+      <div class="container">
+        <h2 id="titulo-modulos" class="text-center mb-4">¿Qué puedes hacer en el sistema?</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+          <div class="col">
+            <article class="card h-100 text-center shadow-sm tarjeta-modulo">
+              <div class="card-body">
+                <div class="icono-modulo" aria-hidden="true">📎</div>
+                <h3 class="h5 card-title">Catálogo</h3>
+                <p class="card-text">Consulta todos los productos con su precio y existencias.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3"><a href="catalogo.html" class="btn btn-clip">Abrir</a></div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100 text-center shadow-sm tarjeta-modulo">
+              <div class="card-body">
+                <div class="icono-modulo" aria-hidden="true">📎</div>
+                <h3 class="h5 card-title">Registro</h3>
+                <p class="card-text">Da de alta nuevos productos con formulario validado.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3"><a href="registro.html" class="btn btn-clip">Abrir</a></div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100 text-center shadow-sm tarjeta-modulo">
+              <div class="card-body">
+                <div class="icono-modulo" aria-hidden="true">📎</div>
+                <h3 class="h5 card-title">Existencias bajas</h3>
+                <p class="card-text">Identifica qué productos necesitan reabastecerse pronto.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3"><a href="registro.html" class="btn btn-clip">Abrir</a></div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100 text-center shadow-sm tarjeta-modulo">
+              <div class="card-body">
+                <div class="icono-modulo" aria-hidden="true">📎</div>
+                <h3 class="h5 card-title">Administrador</h3>
+                <p class="card-text">Inicia sesión para ver indicadores y gestionar el inventario.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3"><a href="admin.html" class="btn btn-clip">Abrir</a></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-clip text-white py-4">
+    <div class="container text-center small">
+      <p class="mb-1">Unidad de Aprendizaje: Tecnologías para el Desarrollo de Aplicaciones Web</p>
+      <p class="mb-0">Instituto Politécnico Nacional · Escuela Superior de Cómputo · Proyecto: Sistema de Control de Inventario</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

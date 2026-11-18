@@ -1,0 +1,71 @@
+body {
+  background-color: #f4f6f9; 
+  color: #212529;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* 1 FRANJA SUPERIOR  */
+.barra-institucional {
+  background-color: #5a1236; /* Guinda oscuro institucional */
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+.badge-institucional {
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+}
+
+/* 2 BARRA DE NAVEGACIÓN PRINCIPAL*/
+.navbar-inventario {
+  /* Degradado horizontal  */
+  background: linear-gradient(90deg, #6c1d45 0%, #003366 100%);
+}
+
+/* 3 boton de registrar producto */
+.btn-ipn {
+  background-color: #6c1d45;
+  border-color: #6c1d45;
+  color: #ffffff;
+}
+
+/* Efecto al poner el cursor en el boton */
+.btn-ipn:hover,
+.btn-ipn:focus {
+  background-color: #521433;
+  border-color: #521433;
+  color: #ffffff;
+}
+
+/* 4 HACER PEQUEÑAS LAS TARJETAS DE STOCK BAJO */
+.miniatura-tabla {
+  width: 64px;
+  height: 64px;
+  object-fit: cover; /* recorta la foto sin aplastarla ni estirarla */
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  flex-shrink: 0; /* no deja que el texto aplaste la imagen  */
+}
+
+/* pie de pagina */
+.footer-institucional {
+  background-color: #1f242d;
+  color: #d1d5db;
+  border-top: 4px solid #6c1d45; /* linea guinda */
+}
+
+.bg-clip {
+        background-color: #12355b;
+        }
+
+/* media query */
+@media (max-width: 576px) {
+  .miniatura-tabla {
+    width: 52px;
+    height: 52px;
+  }
+}
